@@ -1,3 +1,28 @@
+http://localhost:8000/api/login POST
+Headers:
+-Accept: application/json
+Body:
+{
+	"email": "as@df.com",
+	"password": "123456"
+}
+Response:
+{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTUyNTgxMDc5NCwiZXhwIjoxNTI1ODE0Mzk0LCJuYmYiOjE1MjU4MTA3OTQsImp0aSI6IlowYWpQNjFkeTFqR1dxZWoiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.mFmvp6rxWOkuGVookkp0fxksmoSTWqE4aUA2B55Skps"
+}
+http://localhost:8000/api/user GET
+Headers:
+-Accept: application/json
+-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTUyNTgxMDc5NCwiZXhwIjoxNTI1ODE0Mzk0LCJuYmYiOjE1MjU4MTA3OTQsImp0aSI6IlowYWpQNjFkeTFqR1dxZWoiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.mFmvp6rxWOkuGVookkp0fxksmoSTWqE4aUA2B55Skps
+Response:
+{
+    "id": 1,
+    "email": "as@df.com",
+    "created_at": "2018-05-08 19:30:51",
+    "updated_at": "2018-05-08 19:30:51"
+}
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
